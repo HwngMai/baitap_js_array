@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>CHO NGƯỜI DÙNG NHẬP VÀO MỘT SỐ NGUYÊN VÀ LƯU TRỮ TRONG MẢNG</h2>
+      <div class="form-group m-1">
+        <input id="valuePush" type="text" class="w-50 form-control m-1" />
+        <button id="btnPush" class="btn btn-success m-1">
+          Thêm số vào mảng
+        </button>
+        <button id="btnPop" class="btn btn-danger m-1">Xóa số vừa thêm</button>
+        <p class="text text-success m-2" id="myArray"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>Show các số dương trong mảng:</h3>
+        <button id="btnSoDuong" class="btn btn-warning m-1">
+          (1)Tìm số Dương
+        </button>
+        <p id="arrayDuong" class="text text-warning m-2"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>
+          Tổng các số dương trong mảng:
+        </h3>
+        <button id="btnTinhTong" class="btn btn-warning m-1">(2)Tính tổng</button>
+        <p id="tinhTong" class="text text-success m-2"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>Đếm các số dương trong mảng:</h3>
+        <button id="btnDemSoDuong" class="btn btn-warning m-1">
+          (3)Đếm số dương
+        </button>
+        <p id="demSoDuong" class="text text-warning m-2"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>Tìm số dương nhỏ nhất trong mảng:</h3>
+        <button id="btnTimSoDuongMin" class="btn btn-warning m-1">
+          (4)Tìm số dương min:
+        </button>
+        <p id="timSoDuongMin" class="text text-warning m-2"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>Tìm số chẵn cuối cùng trong mảng:</h3>
+        <button id="btnTimSoChanLast" class="btn btn-warning m-1">
+          (5)Tìm số chẵn last:
+        </button>
+        <p id="timSoDuongChanLast" class="text text-warning m-2"></p>
+      </div>
+      <h3 class="m-1">Đổi chỗ 2 vị trí trong mảng:</h3>
+      <div class="form-group m-1 row">
+        <input id="index1" type="text" class="form-control w-25 m-1 col-3" />
+        <input id="index2" type="text" class="form-control w-25 m-1 col-3" />
+      </div>
+      <button id="btnDoiCho" class="btn btn-warning m-1"> (6)Đổi chỗ</button>
+      <p id="doiCho" class="text text-success m-2"></p>
+      <div class="form-group m-1">
+        <h3>Sắp xếp bảng theo thứ tự tăng dần:</h3>
+        <button id="btnSapXep" class="btn btn-warning m-1">(7)Sắp xếp</button>
+        <p id="sapXep" class="text text-success m-2"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>Tìm số nguyên tố đầu tiên:</h3>
+        <button id="btnTimNguyenTo1st" class="btn btn-warning m-1">
+          (8)Tìm 1st Sinh tố bơ
+        </button>
+        <p id="timNguyenTo1st" class="text text-success m-2"></p>
+      </div>
+      <div class="form-group m-1">
+        <h3>
+          So sánh số lượng số âm và dương, click button Tìm số dương (1) và đếm số dương (2) trước
+          !!!
+        </h3>
+        <button id="btnSoSanh" class="btn btn-warning m-1">(9)So Sánh</button>
+        <p id="soSanh" class="text text-success m-2"></p>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
