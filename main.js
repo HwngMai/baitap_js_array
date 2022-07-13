@@ -141,6 +141,11 @@ document.getElementById("btnTimNguyenTo1st").onclick = function () {
         break;
       }
       // Nếu số kiểm tra bé hơn không thì kệ
+      
+    }
+    // Nếu ko có số lớn hơn 0
+    else {
+      so1stNguyenTo = 'Không có số nguyên tố nào'
     }
   }
   console.log("so1stNguyenTo: ", so1stNguyenTo);
@@ -155,7 +160,7 @@ document.getElementById("btnSoSanh").onclick = function () {
       "Số dương ít hơn: " + soSanh + " số";
   } else if (soSanh < 0) {
     document.getElementById("soSanh").innerHTML =
-      " số dương nhiều hơn: " + soSanh * -1 + " số";
+      "Số dương nhiều hơn: " + soSanh * -1 + " số";
   } else {
     document.getElementById("soSanh").innerHTML = "Số dương bằng số âm";
   }
