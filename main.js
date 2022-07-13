@@ -41,13 +41,13 @@ document.getElementById("btnSoDuong").onclick = function () {
   document.getElementById("arrayDuong").innerHTML = arrayDuong2;
 };
 // Tổng các số dương trong mảng
-document.getElementById('btnTinhTong').onclick = function(){
+document.getElementById("btnTinhTong").onclick = function () {
   var tinhTong = 0;
-  for (i = 0; i <= arrayDuong2.length - 1; i++){
+  for (i = 0; i <= arrayDuong2.length - 1; i++) {
     tinhTong += arrayDuong2[i];
   }
-  document.getElementById('tinhTong').innerHTML = tinhTong;
-}
+  document.getElementById("tinhTong").innerHTML = tinhTong;
+};
 // Đếm các số dương trong mảng
 document.getElementById("btnDemSoDuong").onclick = function () {
   var soSoDuong = arrayDuong2.length;
@@ -141,11 +141,10 @@ document.getElementById("btnTimNguyenTo1st").onclick = function () {
         break;
       }
       // Nếu số kiểm tra bé hơn không thì kệ
-      
     }
     // Nếu ko có số lớn hơn 0
     else {
-      so1stNguyenTo = 'Không có số nguyên tố nào'
+      so1stNguyenTo = "Không có số nguyên tố nào";
     }
   }
   console.log("so1stNguyenTo: ", so1stNguyenTo);
@@ -164,4 +163,31 @@ document.getElementById("btnSoSanh").onclick = function () {
   } else {
     document.getElementById("soSanh").innerHTML = "Số dương bằng số âm";
   }
+};
+// Kiểm tra số nguyên
+// Khởi tạo mảng
+var myArray2 = [];
+// Thêm giá trị vào mảng
+document.getElementById("btnPush2").onclick = function () {
+  var valuePush2 = document.getElementById("valuePush2").value * 1;
+  myArray2.push(valuePush2);
+  console.log("myArray2: ", myArray2);
+  document.getElementById("myArray2").innerHTML = myArray2;
+  document.getElementById("valuePush2").value = "";
+};
+document.getElementById("btnPop2").onclick = function () {
+  myArray2.pop();
+  document.getElementById("myArray2").innerHTML = myArray2;
+};
+//Tìm số nguyên
+document.getElementById("btnSoNguyen").onclick = function () {
+  arrayNguyen = [];
+  for (i = 0; i <= myArray2.length; i++) {
+    if (myArray2[i] % 1 === 0) {
+      var valueNguyen = myArray2[i];
+      arrayNguyen.push(valueNguyen);
+    }
+  }
+  console.log("arrayNguyen: ", arrayNguyen);
+  document.getElementById("arrayNguyen").innerHTML = arrayNguyen;
 };
